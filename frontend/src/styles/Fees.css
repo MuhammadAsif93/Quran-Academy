@@ -1,0 +1,126 @@
+.fees-page {
+  width: 100%;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-cream);
+}
+
+.page-header {
+  width: 100%;
+  background: linear-gradient(150deg, #0e4d3a 0%, #15694f 55%, #259873 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4.5rem 1.5rem 3.5rem;
+}
+
+.page-header__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.page-header__eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.page-header__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  margin-bottom: 1rem;
+}
+
+.page-header__subtitle {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn--gold {
+  background: var(--color-gold);
+  color: var(--color-emerald-deep);
+}
+
+.btn--gold:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+/* ---------- Content ---------- */
+.fees-content {
+  padding: 5rem 1.5rem;
+}
+
+.fees-content__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.fees-note {
+  background: #fff;
+  border-left: 4px solid var(--color-gold);
+  border-radius: 10px;
+  padding: 1.6rem 1.8rem;
+  box-shadow: 0 8px 22px rgba(11, 61, 46, 0.06);
+}
+
+.fees-note h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--color-emerald-deep);
+  margin-bottom: 0.8rem;
+}
+
+.fees-note ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.fees-note li {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(30, 36, 34, 0.72);
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.fees-note li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+}
+
+/* ---------- CTA ---------- */
+.fees-cta {
+  background: var(--color-emerald-deep);
+  text-align: center;
+  padding: 4.5rem 1.5rem;
+}
+
+.fees-cta__inner h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  color: #fff;
+  margin-bottom: 1.4rem;
+}

@@ -1,0 +1,81 @@
+.fee-table__wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(11, 61, 46, 0.08);
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #e8ecf0;
+  font-size: 0.92rem;
+}
+
+.fee-table thead tr {
+  background: var(--color-emerald-deep);
+}
+
+.fee-table th {
+  color: #0e0d0d;
+  text-align: left;
+  padding: 0.95rem 1.2rem;
+  font-weight: 900;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fee-table td {
+  padding: 0.95rem 1.2rem;
+  border-bottom: 1px solid rgba(11, 61, 46, 0.08);
+  color: var(--color-ink);
+}
+
+.fee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.fee-table tbody tr:hover {
+  background: var(--color-emerald-light);
+}
+
+.fee-table__price {
+  font-weight: 700;
+  color: var(--color-emerald-deep);
+}
+
+/* ---------- Responsive: collapse to stacked cards ---------- */
+@media (max-width: 640px) {
+  .fee-table thead {
+    display: none;
+  }
+
+  .fee-table,
+  .fee-table tbody,
+  .fee-table tr,
+  .fee-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .fee-table tr {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid rgba(11, 61, 46, 0.08);
+  }
+
+  .fee-table td {
+    border: none;
+    padding: 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fee-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--color-emerald);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+  }
+}

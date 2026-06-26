@@ -1,0 +1,81 @@
+const fees = [
+  {
+    id: "noorani-qaida",
+    course: "Noorani Qaida",
+    classesPerWeek: 5,
+    duration: "30 mins/class",
+    monthlyFee: "$10",
+  },
+  {
+    id: "tarjuma-quran",
+    course: "Tarjuma Quran",
+    classesPerWeek: 4,
+    duration: "40 mins/class",
+    monthlyFee: "$17",
+  },
+  {
+    id: "tarjuma-tafseer",
+    course: "Tarjuma Tafseer",
+    classesPerWeek: 4,
+    duration: "45 mins/class",
+    monthlyFee: "$18 ",
+  },
+  {
+    id: "asaan-namaz",
+    course: "Asaan Namaz",
+    classesPerWeek: 3,
+    duration: "30 mins/class",
+    monthlyFee: "$8",
+  },
+  {
+    id: "bunyadi-maloomat",
+    course: "Bunyadi Maloomat-e-Deen",
+    classesPerWeek: 3,
+    duration: "30 mins/class",
+    monthlyFee: "$9",
+  },
+  {
+    id: "kalme",
+    course: "Kalme",
+    classesPerWeek: 3,
+    duration: "20 mins/class",
+    monthlyFee: "$6",
+  },
+  {
+    id: "duaas",
+    course: "Duaas (Masnoon Duayen)",
+    classesPerWeek: 3,
+    duration: "20 mins/class",
+    monthlyFee: "$7",
+  },
+  {
+    id: "chehel-hadees",
+    course: "Chehel Hadees",
+    classesPerWeek: 3,
+    duration: "30 mins/class",
+    monthlyFee: "$8",
+  },
+  {
+    id: "nazira-with-tajweed",
+    course: "Nazira with Tajweed",
+    classesPerWeek: 5,
+    duration: "40 mins/class",
+    monthlyFee: "$12",
+  },
+  {
+    id: "nazira-without-tajweed",
+    course: "Nazira without Tajweed",
+    classesPerWeek: 5,
+    duration: "40 mins/class",
+    monthlyFee: "$11",
+  },
+  {
+    id: "hifz-ul-quran",
+    course: "Hifz-e-Quran",
+    classesPerWeek: 6,
+    duration: "45 mins/class",
+    monthlyFee: "$16",
+  },
+];
+
+export default fees;
