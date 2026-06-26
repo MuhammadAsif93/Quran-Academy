@@ -3,18 +3,25 @@ Django settings for quran_project.
 """
 
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # ---------- SECURITY ----------
 # ⚠️ Yeh secret key sirf development ke liye hai.
 # Production mein isko environment variable se load karna — kisi ko mat dikhana.
-SECRET_KEY = "django-insecure-CHANGE-THIS-BEFORE-DEPLOYING-xyz123"
+SECRET_KEY = os.environ.get(
+    "SECRET_KEY",
+    "django-insecure-CHANGE-THIS-BEFORE-DEPLOYING-xyz123"
+)
 
-DEBUG = True
+DEBUG = os.environ.get("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    ".onrender.com",
+]
 # ---------- APPS ----------
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -84,7 +91,8 @@ USE_I18N = True
 USE_TZ = True
 
 # ---------- STATIC FILES ----------
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
@@ -108,7 +116,7 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = "Fatima41680@gmail.com"
-EMAIL_HOST_PASSWORD = "hnozmjixplwflcjt"
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
